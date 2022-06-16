@@ -13,52 +13,72 @@
       gtag('config', 'G-R796WEWE6Z');
     </script>
     <style>
-      a {
-        color:black;
-        text-decoration: none;
-      }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      border-bottom: 1px solid grey;
+    }
+    #grid ul{
+      padding-left: 38px;
+    }
+    #article{
+      padding-left: 25px;
+    }
+    #active {
+      color: blue;
+    }
       .saw {
         color: grey;
-      }
-      #active {
-        color: blue;
+    }
+      a {
+        color: black;
+        text-decoration: none;
       }
       h1 {
         font-size: 60px;
         text-align: center;
+        border-bottom: 1px solid grey;
+        margin: 0;
+        padding: 20px;
+      }
+      ul{
+        border-right: 1px solid grey;
+        width:90px;
+        margin:0;
+        padding:20px;
+      }
+      body{
+        margin:0;
       }
     </style>
   </head>
   <body>
     <h1><a href="index.html">WEB</a></h1>
-    <ul>
-      <li><a href="1.html" class="saw">HTML</a></li>
-      <li><a href="2.html" class="saw" id="active" style="text-decoration:underline">CSS</a></li>
-      <li><a href="3.html" class="saw">JavaScript</a></li>
-    </ul>
-    <h2>
-      <a href="https://namu.wiki/w/CSS"
-         target="_blank"
-         title="HTML">
-          CSS
-      </a>
-    </h2>
-    <p style="margin-top:35px;">
-      <img src="CSS.png" width="100"><br>
-      <br>
-      <strong>HTML</strong> 등의 <strong>마크업 언어</strong>로 작성된 문서가 실제로 웹사이트에 표현되는 방법을 정해주는 스타일 시트 언어.<br>
-      <br>
-      CSS의 C가 Cascading의 약자인데, 이는 상위 요소의 스타일 속성을 자손 요소들에게 상속시켜주는 모습이<br>
-      DOM 트리구조에서 마치 폭포수처럼 내려가는 모습을 닮았기 때문이다. 다만 예외로 마진, 패딩, 보더 등의<br>
-      박스모델 관련 속성은 상속되지 않는다. 물론 inherit 값을 줘서 강제로 상속시킬 순 있다.
-    </p>
-    <p>
-    <ol>
-      <li><a href="1.html">HTML</a></li>
-      <li><a href="2.html">CSS</a></li>
-      <li><a href="3.html">JavaScript</a></li>
-    </ol>
-    </p>
+    <div id="grid">
+      <ul>
+        <li><a href="1.html" class="saw">HTML</a></li>
+        <li><a href="2.html" class="saw" id="active" style="text-decoration:underline">CSS</a></li>
+        <li><a href="3.html" class="saw">JavaScript</a></li>
+      </ul>
+      <div id="article">
+        <h2>
+          <a href="https://namu.wiki/w/CSS"
+             target="_blank"
+             title="HTML">
+              CSS
+          </a>
+        </h2>
+        <p style="margin-top:35px;">
+          <img src="CSS.png" width="100"><br>
+          <br>
+          <strong>HTML</strong> 등의 <strong>마크업 언어</strong>로 작성된 문서가 실제로 웹사이트에 표현되는 방법을 정해주는 스타일 시트 언어.<br>
+          <br>
+          CSS의 C가 Cascading의 약자인데, 이는 상위 요소의 스타일 속성을 자손 요소들에게 상속시켜주는 모습이<br>
+          DOM 트리구조에서 마치 폭포수처럼 내려가는 모습을 닮았기 때문이다. 다만 예외로 마진, 패딩, 보더 등의<br>
+          박스모델 관련 속성은 상속되지 않는다. 물론 inherit 값을 줘서 강제로 상속시킬 순 있다.
+        </p>
+      </div>
+    </div>
     <p>
       <div id="disqus_thread"></div>
 <script>

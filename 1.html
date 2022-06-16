@@ -13,52 +13,72 @@
       gtag('config', 'G-R796WEWE6Z');
     </script>
     <style>
-      a {
-        color:black;
-        text-decoration: none;
-      }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      border-bottom: 1px solid grey;
+    }
+    #grid ul{
+      padding-left: 38px;
+    }
+    #article{
+      padding-left: 25px;
+    }
+    #active {
+      color: red;
+    }
       .saw {
         color: grey;
-      }
-      #active {
-        color: red;
+    }
+      a {
+        color: black;
+        text-decoration: none;
       }
       h1 {
         font-size: 60px;
         text-align: center;
+        border-bottom: 1px solid grey;
+        margin: 0;
+        padding: 20px;
+      }
+      ul{
+        border-right: 1px solid grey;
+        width:90px;
+        margin:0;
+        padding:20px;
+      }
+      body{
+        margin:0;
       }
     </style>
   </head>
   <body>
     <h1><a href="index.html">WEB</a></h1>
-    <ul>
-      <li><a href="1.html" class="saw" id="active" style="text-decoration:underline">HTML</a></li>
-      <li><a href="2.html" class="saw">CSS</a></li>
-      <li><a href="3.html" class="saw">JavaScript</a></li>
-    </ul>
-    <h2>
-      <a href="https://namu.wiki/w/HTML"
-         target="_blank"
-         title="HTML">
-          HTML
-      </a>
-    </h2>
-    <p style="margin-top:35px;">
-      <img src="HTML.png" width="100"><br>
-      <br>
-      <strong>웹사이트</strong>의 모습을 기술하기 위한 <strong>마크업 언어.</strong><br>
-      <br>
-      <strong>프로그래밍 언어</strong>가 아니라 마크업 정보를 표현하는 마크업 언어로 문서의 내용 이외의 문서의 구조나<br>
-      서식 같은 것을 포함한다. 보면 알겠지만 애초에 이름 HTML의 ML이 마크업 언어라는 뜻이다.<br>
-      웹사이트에서 흔히 볼 수 있는 htm이나 html 확장자가 바로 이 언어로 작성된 문서다.
-    </p>
-    <p>
-    <ol>
-      <li><a href="1.html">HTML</a></li>
-      <li><a href="2.html">CSS</a></li>
-      <li><a href="3.html">JavaScript</a></li>
-    </ol>
-    </p>
+    <div id="grid">
+      <ul>
+        <li><a href="1.html" class="saw" id="active" style="text-decoration:underline">HTML</a></li>
+        <li><a href="2.html" class="saw">CSS</a></li>
+        <li><a href="3.html" class="saw">JavaScript</a></li>
+      </ul>
+      <div id="article">
+        <h2>
+          <a href="https://namu.wiki/w/HTML"
+             target="_blank"
+             title="HTML">
+              HTML
+          </a>
+        </h2>
+        <p style="margin-top:35px;">
+          <img src="HTML.png" width="100"><br>
+          <br>
+          <strong>웹사이트</strong>의 모습을 기술하기 위한 <strong>마크업 언어.</strong><br>
+          <br>
+          <strong>프로그래밍 언어</strong>가 아니라 마크업 정보를 표현하는 마크업 언어로 문서의 내용 이외의 문서의 구조나<br>
+          서식 같은 것을 포함한다. 보면 알겠지만 애초에 이름 HTML의 ML이 마크업 언어라는 뜻이다.<br>
+          웹사이트에서 흔히 볼 수 있는 htm이나 html 확장자가 바로 이 언어로 작성된 문서다.
+        </p>
+      </div>
+    </div>
     <p>
       <div id="disqus_thread"></div>
 <script>
